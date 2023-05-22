@@ -12,9 +12,10 @@ export const addBooks = async (req, res) => {
 }
 
 export const getBooks = async (req, res) => {
+    let books
     try {
-        const books = await Books.find({});
-        res.status(200).json(books)
+         books = await Books.find();
+        res.status(200).json({books})
     } catch (error) {
         res.status(404).json({ massege: error.massege })
     }

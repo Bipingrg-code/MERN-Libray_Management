@@ -2,12 +2,15 @@ import express from 'express'
 import dbConnection from './database/dbConnection.js'
 import dotenv from 'dotenv'
 import router from './routes/bookRoutes.js';
+import cors from 'cors'
 const app = express();
 
 app.use(express.json())
 
+app.use(cors())
+
 //Routes
-app.use('/api/v1/', router)
+app.use('/api/v1', router)
 
 //end config
 dotenv.config()
