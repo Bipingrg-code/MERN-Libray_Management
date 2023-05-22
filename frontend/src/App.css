@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bg {
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(88, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+hr {
+  margin: 0 !important;
+}
